@@ -1,0 +1,403 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.work-link{display:inline-block;background:#193d67;color:#fff;padding:10px 16px;border-radius:6px;font-weight:700;text-decoration:none}.work-link:focus-visible{outline:3px solid #906216;outline-offset:3px}h3[id]{scroll-margin-top:85px}</style></head><body>
+<title>Krishna Saketh Punyamurthula — Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+
+<style>
+:root {
+  --bg:        #FFFFFF;
+  --surface:   #F8F9FA;
+  --text:      #202124;
+  --muted:     #5F6368;
+  --accent:    #1A73E8;
+  --border:    #DADCE0;
+  --hdr:       #1A73E8;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:        #202124;
+    --surface:   #292A2D;
+    --text:      #E8EAED;
+    --muted:     #9AA0A6;
+    --accent:    #8AB4F8;
+    --border:    #3C4043;
+    --hdr:       #174EA6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg:        #202124;
+  --surface:   #292A2D;
+  --text:      #E8EAED;
+  --muted:     #9AA0A6;
+  --accent:    #8AB4F8;
+  --border:    #3C4043;
+  --hdr:       #174EA6;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0;
+}
+
+/* Header */
+.site-header {
+  background: var(--hdr);
+  color: #fff;
+  padding-left: max(40px, env(safe-area-inset-left, 0px));
+  padding-right: max(40px, env(safe-area-inset-right, 0px));
+  padding-block: 36px 32px;
+  margin-left: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+  margin-right: calc(-1 * max(16px, env(safe-area-inset-right, 0px)));
+}
+.site-header .eyebrow {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+.site-header h1 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.site-header p {
+  font-size: 14px;
+  opacity: 0.82;
+  font-weight: 300;
+}
+
+/* Nav */
+.nav-tabs {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  margin-left: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+  margin-right: calc(-1 * max(16px, env(safe-area-inset-right, 0px)));
+  padding-left: max(40px, env(safe-area-inset-left, 0px));
+  display: flex;
+  overflow-x: auto;
+}
+.nav-tabs a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 13px 16px;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+.nav-tabs a.active,
+.nav-tabs a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* Page wrapper */
+.page-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding-block: 40px 80px;
+}
+
+/* Cards */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 24px 28px;
+  margin-bottom: 16px;
+}
+
+/* Sections */
+.port-section {
+  margin-bottom: 52px;
+  padding-bottom: 52px;
+  border-bottom: 1px solid var(--border);
+}
+.port-section:last-child { border-bottom: none; margin-bottom: 0; }
+
+.section-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.port-section > h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 4px;
+  text-wrap: balance;
+}
+
+.port-section .meta-line {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+/* Artifact field label */
+.field-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 18px 0 5px;
+}
+.field-label:first-child { margin-top: 0; }
+
+.port-section p,
+.card p {
+  font-size: 14.5px;
+  color: var(--text);
+  line-height: 1.78;
+  margin-bottom: 10px;
+  max-width: 70ch;
+}
+.port-section p:last-child,
+.card p:last-child { margin-bottom: 0; }
+
+.port-section ul,
+.card ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.port-section ul li,
+.card ul li {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+/* Value prop box */
+.vp-box {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+  padding: 16px 20px;
+  margin-top: 6px;
+}
+.vp-box p { font-size: 14px; margin-bottom: 8px; }
+.vp-box p:last-child { margin-bottom: 0; }
+.vp-sub {
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 3px;
+}
+
+/* Timeline list */
+.tl-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+.tl-list li {
+  display: grid;
+  grid-template-columns: 68px 1fr;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+.tl-list li:last-child { border-bottom: none; }
+.tl-year { font-weight: 700; color: var(--accent); padding-top: 2px; font-size: 13px; }
+.tl-text { color: var(--text); }
+.tl-text strong { font-weight: 500; }
+
+/* Focus */
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+@media (max-width: 600px) {
+  .site-header { padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+  .tl-list li { grid-template-columns: 52px 1fr; gap: 10px; }
+  .card { padding: 18px 16px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+.work-link{display:inline-block;background:#193d67;color:#fff;padding:10px 16px;border-radius:6px;font-weight:700;text-decoration:none}.work-link:focus-visible{outline:3px solid #906216;outline-offset:3px}h3[id]{scroll-margin-top:85px}</style>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="eyebrow">Professional Portfolio · AIML-500 · Indiana Wesleyan University</div>
+  <h1>Krishna Saketh Punyamurthula</h1>
+  <p>Machine Learning Fundamentals · 2026 · Selected Coursework</p>
+</header>
+
+<!-- Nav -->
+<nav class="nav-tabs">
+  <a href="#bio" class="active">About</a>
+  <a href="#artifact1">Artifact 1</a>
+  <a href="#artifact2">Artifact 2</a>
+  <a href="#artifact3">Artifact 3</a>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- Professional Bio -->
+  <section class="port-section" id="bio">
+    <div class="section-eyebrow">Professional Bio</div>
+    <h2>About Krishna Saketh Punyamurthula</h2>
+
+    <div class="card">
+      <p>My name is Krishna Saketh Punyamurthula and I am currently enrolled in the AIML-500 Machine Learning Fundamentals course at Indiana Wesleyan University. I work in a professional environment where AI tools and data-driven decisions are becoming central to how teams operate, which is what drew me to this program in the first place.</p>
+      <p>My background sits at the intersection of technology and people. I have spent time learning how to explain technical concepts clearly to non-technical colleagues, how to adapt when plans change, and how to keep moving forward when a project hits an unexpected wall. Those are the skills I want to continue building here — not just the technical side of machine learning, but the leadership side that makes AI work actually land in organizations.</p>
+      <p>My goal through this program is to become someone who can lead AI/ML integration efforts from the inside — someone who understands the models, knows how to bring stakeholders along, and can manage the organizational change that comes with new technology.</p>
+    </div>
+
+    <div class="field-label" style="margin-top:24px;">Personal Value Proposition</div>
+    <div class="vp-box">
+      <span class="vp-sub">Unique Value</span>
+      <p>I bring together technical understanding of AI/ML with the communication skills needed to make that technology usable across an organization. I can translate complex concepts for non-technical audiences, adapt quickly when plans shift, and stay focused on outcomes rather than process. I am also committed to honest self-assessment — I would rather know where my gaps are and work on them than present a version of myself that sounds good but is not accurate.</p>
+      <span class="vp-sub" style="margin-top:12px;">Relevance</span>
+      <p>As AI adoption increases across industries, organizations need people who can bridge the gap between what is technically possible and what is organizationally practical. That is where I aim to be useful — not just as someone who knows AI/ML, but as someone who can help teams adopt it effectively and sustainably.</p>
+    </div>
+  </section>
+
+<section class="port-section" id="artifact1">
+    <div class="section-eyebrow">Artifact 1 · Discussion 1.5</div>
+    <h2>AI/ML Leadership and Change Management Self-Assessment</h2><p><a class="work-link" href="#work-1">View self-assessment findings and evaluation ↓</a></p>
+    <p class="meta-line">Workshop 1 · Leadership Discussion · October 2026</p>
+
+    <div class="field-label">Introduction</div>
+    <p>Discussion 1.5 asked me to step back and evaluate myself as a professional before going further in the course. I completed two self-assessments — one focused on AI/ML leadership skills and one on change management — then wrote a reflection on what I found, shared my opinion of the tools themselves, and suggested revisions based on gaps I noticed. It was one of the more uncomfortable assignments I have done, which probably means it was also one of the more useful ones.</p>
+
+    <div class="field-label">Description</div>
+    <p>This artifact covers the results of both assessments along with my honest take on my top strengths and growth areas in each category, my evaluation of both tools as professional instruments, and specific revisions I would make to improve them. The point was not to look good on paper — it was to actually figure out where I stand and what I need to work on going forward.</p>
+
+    <div class="field-label">Objective</div>
+    <ul>
+      <li>To honestly evaluate where I am strong and where I have real gaps as a leader in AI/ML and change management.</li>
+      <li>To understand what effective change leadership looks like specifically in an AI/ML context.</li>
+    </ul>
+
+    <div class="field-label">Process</div>
+    <p>I completed both assessment forms from start to finish, rating myself on each item using the 1 to 5 scale. Once I was done, I identified the three highest and three lowest scoring areas in each one. I then read both articles assigned for Part 1 — the CCL piece on successful change leadership and the Change Strategists piece on assessing change management skills. With all of that in front of me, I wrote the reflection: what the scores told me, what I actually think of the tools, and what I would change about them if I were designing them myself.</p>
+
+    <div class="field-label">Tools and Technologies Used</div>
+    <ul>
+      <li>AI/ML Integration Leadership Skills Self-Assessment Form (course-provided)</li>
+      <li>Change Management Skills Self-Assessment Form (course-provided)</li>
+      <li>CCL article: "How to be a Successful Change Leader"</li>
+      <li>changestrategists.com: "How to Assess Change Management Skills"</li>
+      <li>Brightspace — for discussion submission</li>
+    </ul>
+
+    <h3 id="work-1">Self-assessment findings and evaluation</h3>
+
+    <p><strong>Top 3 Strengths:</strong> Stakeholder Communication, understanding how AI applies to business situations, and keeping up with new developments in the field. These reflect the work I do most consistently in my professional role — especially translating technical ideas into language that non-technical stakeholders can understand and act on.</p>
+
+    <p><strong>Top 3 Growth Areas:</strong> Building structured training programs for AI adoption, scaling AI tools across larger organizations, and measuring whether AI projects are actually delivering value long term. The training gap is the one I find most important to address. Getting an AI solution working is a different skill than helping an organization sustain it, and I have not invested enough in the second one.</p>
+
+    <div class="field-label">Assessment Findings — Change Management Skills</div>
+
+    <p><strong>Top 3 Strengths:</strong> Communication Skills, Flexibility and Adaptability, and Continuous Learning. The adaptability score felt accurate — AI projects almost never go exactly as planned, and I have gotten used to adjusting without losing sight of the end goal.</p>
+
+    <p><strong>Top 3 Growth Areas:</strong> Formal change management frameworks, Resilience under sustained pressure, and Conflict Resolution. I know how to manage change in practice but have not formally studied methods like Prosci's ADKAR model or Kotter's 8-Step Process. The conflict resolution gap is the most honest score on the page — I handle resistance well when I understand where it is coming from, but I tend to avoid difficult conversations when the source of pushback is unclear.</p>
+
+    <div class="field-label">Evaluation of the Assessments</div>
+    <p>Both tools are a useful starting point, but they only work if the person completing them is willing to be honest. Someone who marks themselves a 5 on everything gets nothing useful out of it. The value comes entirely from the quality of the reflection behind the score. I also identified two gaps in the assessments themselves:</p>
+    <ul>
+      <li>The AI/ML assessment does not include a category for AI Governance and Regulatory Literacy. As governments develop frameworks like the EU AI Act and NIST AI Risk Management Framework, this is becoming a required leadership skill, not an optional one.</li>
+      <li>The Change Management assessment does not include a category for Managing Change Fatigue — the exhaustion that builds when an organization is running several major AI initiatives at the same time. This is one of the most common reasons AI rollouts stall, and it deserves its own section.</li>
+    </ul>
+
+    <div class="field-label">Value Proposition</div>
+    <div class="vp-box">
+      <span class="vp-sub">Unique Value</span>
+      <p>This artifact shows a willingness to evaluate myself honestly and in public — not just list strengths but name real gaps and explain what I am doing about them. That kind of self-awareness is rare in professional portfolios, which tend to highlight only the polished version of a person's work.</p>
+      <span class="vp-sub" style="margin-top:12px;">Relevance</span>
+      <p>Leaders who know where their gaps are perform better than those who do not. This artifact demonstrates the kind of professional maturity that is directly applicable to anyone hiring for AI/ML leadership or change management roles.</p>
+    </div>
+
+    <div class="field-label">References</div>
+    <ul>
+      <li>Center for Creative Leadership. (n.d.). <em>How to be a successful change leader.</em> ccl.org</li>
+      <li>Change Strategists. (n.d.). <em>How to assess change management skills.</em> changestrategists.com</li>
+    </ul>
+  </section><section class="port-section" id="artifact2"><div class="section-eyebrow">Artifact 2 · Assignment 2.3</div><h2>Machine Learning vs. Deep Learning: Choosing the Right Approach</h2><p><a class="work-link" href="#work-2">View full comparison report ↓</a></p><p><strong>Introduction:</strong> Assignment 2.3 asked me to compare machine learning (ML) and deep learning (DL) by analyzing real-world applications. This artifact shows a different skill from Artifact 1: instead of evaluating myself, I evaluate technology and explain which approach fits which problem.</p><p><strong>Description:</strong> A written report comparing two examples from the course lesson: house price prediction with linear regression (machine learning) and machine translation with Transformer models (deep learning). For each, the report identifies a real-world application, explains why the approach is suitable, and explains why the other approach is not. The full report is included below.</p><p><strong>Objective:</strong></p><ul><li>To differentiate between machine learning and deep learning by analyzing real-world cases.</li><li>To explain the trade-offs between the two approaches clearly enough for a non-technical reader to follow.</li></ul><p><strong>Process:</strong> I started from the lesson material on feature extraction, data requirements, and model complexity. I selected one ML example and one DL example from the lesson, found a real application of each, and judged both on the same five factors: data type, how features are defined, amount of data needed, computing cost, and explainability. I then wrote the report around those factors.</p><p><strong>Tools and Technologies Used:</strong></p><ul><li>Course lesson: Machine Learning vs. Deep Learning (Assignment 2.3)</li><li>Published research on neural machine translation and the Transformer architecture</li><li>HTML for formatting the report</li><li>Brightspace for submission</li></ul><h3 id="work-2">Full comparison report</h3><p><em>Introduction</em>
+Machine learning (ML) and deep learning (DL) both let computers learn patterns from data, but they suit different problems. In traditional ML, people choose the features (the data characteristics that matter) and an algorithm such as linear regression, a decision tree, or a support vector machine learns from them. Deep learning is a subset of ML that uses neural networks with many layers to discover useful features directly from raw data. DL usually needs far more data and computing power, while simpler ML models work well with smaller datasets and are faster to train and easier to explain. This report examines house price prediction using linear regression (ML) and machine translation using Transformer models (DL).</p><p><em>Example 1: Simple Machine Learning — House Price Prediction</em>
+Real-world application. Property tax offices and appraisers commonly use regression-based mass appraisal models to estimate the value of many homes at once. Inputs are well-understood attributes such as square footage, bedrooms and bathrooms, lot size, age of the home, and neighborhood. Online home-value estimators use the same family of techniques to price homes against comparable sales.</p><p>Why machine learning is suitable. The features are already known, so the model does not need to discover them. The data is structured and moderate in size, which regression handles well. Explainability matters: a homeowner who disputes an assessment can be shown how each additional bathroom or square foot changes the estimate, and public agencies must be able to justify valuations. The model is also cheap and fast to retrain on standard hardware.</p><p>Why deep learning is not the best fit. A deep neural network would add complexity without clear benefit. With tabular data and well-chosen features, deep models often perform no better than simpler ones, they need more data and tuning to avoid overfitting, and their reasoning is hard to explain. That lack of transparency is a serious drawback when the result affects someone&#x27;s tax bill or loan decision.</p><p><em>Example 2: Deep Learning — Machine Translation</em>
+Real-world application. Google Translate moved from phrase-based statistical methods to neural machine translation in 2016 (Wu et al., 2016), and modern translation systems rely on Transformer architectures (Vaswani et al., 2017). These systems translate text between many languages in real time.</p><p>Why deep learning is suitable. The features cannot be hand-written: meaning depends on context, grammar, idiom, and word order, which differ across languages. Text is abundant, and deep networks thrive on very large datasets, learning from word patterns up to sentence meaning. Transformer models use attention to weigh how every word in a sentence relates to the others, so the word &quot;bank&quot; is handled differently near &quot;river&quot; than near &quot;loan.&quot; The heavy computation is worthwhile because quality improves dramatically over rule- and feature-based methods.</p><p>Why simple machine learning is not suitable. A traditional ML model would require engineers to define features for language by hand, such as word counts or fixed phrases. Those features cannot capture long-range context, ambiguity, or the variety of sentence structures, so translations would be literal, awkward, and often wrong.</p><p><em>Comparison</em></p><ul><li>Approach: House price prediction uses machine learning (linear regression); machine translation uses deep learning (Transformer).</li><li>Data type: structured, tabular vs. unstructured text.</li><li>Features: chosen by people vs. learned automatically.</li><li>Data needed: moderate vs. very large.</li><li>Computing cost: low vs. high.</li><li>Explainability: high vs. low.</li></ul><p><em>Conclusion</em>
+Deep learning is not automatically better than machine learning. When features are known, data is structured, and decisions must be explained, simple ML models like linear regression are efficient and trustworthy. When the input is complex and unstructured and the patterns are too intricate to define by hand, as with language, deep learning is the better tool despite its cost and opacity. Matching the method to the problem, rather than choosing the most advanced technique, is the key lesson for anyone leading AI-enabled work.</p><p><strong>Value Proposition</strong>
+<em>Unique Value:</em> This artifact shows I can match an AI method to a problem instead of defaulting to the most advanced option, and explain the reasoning plainly. Knowing when a simpler model is the right call matters as much as knowing how to build a complex one.
+<em>Relevance:</em> Anyone leading AI adoption has to weigh cost, data needs, and whether stakeholders can trust the result. This comparison mirrors the questions a team asks before approving an AI project.</p><p><strong>References:</strong></p><ul><li>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., &amp; Polosukhin, I. (2017). Attention is all you need. Advances in Neural Information Processing Systems, 30.</li><li>Wu, Y., Schuster, M., Chen, Z., Le, Q. V., Norouzi, M., et al. (2016). Google&#x27;s neural machine translation system: Bridging the gap between human and machine translation. arXiv:1609.08144.</li><li>Indiana Wesleyan University. (2026). Machine Learning vs. Deep Learning [Course lesson, Assignment 2.3]. AIML-500.</li></ul></section><section class="port-section" id="artifact3">
+    <div class="section-eyebrow">Artifact 3 · Discussion 1.3</div>
+    <h2>A History of Artificial Intelligence: Key Milestones Timeline</h2><p><a class="work-link" href="#work-3">View ai history timeline ↓</a></p>
+    <p class="meta-line">Workshop 1 · Research Discussion · October 2026</p>
+
+    <div class="field-label">Introduction</div>
+    <p>Discussion 1.3 asked me to research the history of AI and present the key milestones as a visual timeline. The assignment had three parts: the historical context from the 1950s, the AI Winters where progress stalled, and the recent breakthroughs tied to deep learning and new hardware. Putting it all together in one place helped me understand why the field developed the way it did — and why so many people were caught off guard by the pace of progress after 2012.</p>
+
+    <div class="field-label">Description</div>
+    <p>A chronological timeline covering AI's development from 1950 to 2025. It walks through the major milestones, explains both AI Winters, identifies the key figures and organizations at each turning point, and shows why hardware improvements were just as important as new algorithms in driving the modern AI era. The goal was to produce something useful as a reference, not just as an assignment deliverable.</p>
+
+    <div class="field-label">Objective</div>
+    <ul>
+      <li>To research and map out the key moments in AI and machine learning history in a clear, accurate way.</li>
+      <li>To understand which figures, organizations, and decisions shaped the field — and which ones nearly ended it.</li>
+    </ul>
+
+    <div class="field-label">Process</div>
+    <p>I started with Putchuon's documentary overview on YouTube to get the full narrative arc, from Alan Turing to the current competition between OpenAI, Google, and others. I then used IEEE Computer Society's technical history to pin down accurate dates and terminology. Our World in Data's interactive charts helped me connect the growth in computing power to the jumps in AI capability. From those three sources I built the timeline, organizing milestones chronologically and adding short explanations for each one.</p>
+
+    <div class="field-label">Tools and Technologies Used</div>
+    <ul>
+      <li>YouTube — Putchuon documentary on AI history (2024)</li>
+      <li>IEEE Computer Society — technical history of AI</li>
+      <li>Our World in Data — interactive data on AI trajectory</li>
+      <li>Canva — for visual timeline design</li>
+      <li>Brightspace — for discussion submission</li>
+    </ul>
+
+    <h3 id="work-3">AI history timeline</h3>
+    <ul class="tl-list">
+      <li><span class="tl-year">1950</span><span class="tl-text"><strong>The Turing Test</strong> — Alan Turing asks "Can machines think?" and proposes the Imitation Game as a benchmark for machine intelligence.</span></li>
+      <li><span class="tl-year">1956</span><span class="tl-text"><strong>Dartmouth Conference</strong> — John McCarthy and Marvin Minsky coin the term "Artificial Intelligence." The official birth of AI as an academic field.</span></li>
+      <li><span class="tl-year">1957–65</span><span class="tl-text"><strong>Early Optimism</strong> — Frank Rosenblatt builds the Perceptron, the first neural network model. ELIZA demonstrates early natural language processing. Researchers predict human-level AI within 20 years.</span></li>
+      <li><span class="tl-year">1974–80</span><span class="tl-text"><strong>AI Winter I</strong> — Funding collapses. The Lighthill Report criticizes AI research. DARPA cuts funding. Hardware cannot support the theories being developed.</span></li>
+      <li><span class="tl-year">1980–87</span><span class="tl-text"><strong>Expert Systems Boom</strong> — Rule-based expert systems like XCON generate commercial excitement. Japan launches the Fifth Generation Computer Project.</span></li>
+      <li><span class="tl-year">1987–93</span><span class="tl-text"><strong>AI Winter II</strong> — Expert systems prove brittle and expensive. The Lisp machine market collapses. DARPA pulls funding again. The field nearly dies commercially.</span></li>
+      <li><span class="tl-year">1997</span><span class="tl-text"><strong>Deep Blue Beats Kasparov</strong> — IBM's Deep Blue defeats world chess champion Garry Kasparov for the first time — a cultural and technical milestone.</span></li>
+      <li><span class="tl-year">2006–09</span><span class="tl-text"><strong>Deep Learning Foundation</strong> — Geoffrey Hinton's team revives neural networks through deep belief networks. The groundwork for modern AI is laid quietly.</span></li>
+      <li><span class="tl-year">2012</span><span class="tl-text"><strong>The AlexNet Moment</strong> — AlexNet cuts ImageNet error rates by 10 points in one year. Nvidia GPUs make it possible. The modern AI era begins here.</span></li>
+      <li><span class="tl-year">2016</span><span class="tl-text"><strong>AlphaGo</strong> — Google DeepMind defeats world Go champion Lee Sedol 4–1 using reinforcement learning — intuition-like pattern recognition, not brute force.</span></li>
+      <li><span class="tl-year">2017</span><span class="tl-text"><strong>Transformer Architecture</strong> — Google publishes "Attention Is All You Need," creating the foundation of every major language model today.</span></li>
+      <li><span class="tl-year">2022</span><span class="tl-text"><strong>ChatGPT</strong> — OpenAI launches ChatGPT. Reaches 100 million users in two months — the fastest-growing consumer application in history.</span></li>
+      <li><span class="tl-year">2023–25</span><span class="tl-text"><strong>The Arms Race</strong> — OpenAI, Google, Meta, and Anthropic compete across multimodal AI, reasoning models, and AI agents.</span></li>
+    </ul>
+
+    <div class="field-label">Value Proposition</div>
+    <div class="vp-box">
+      <span class="vp-sub">Unique Value</span>
+      <p>This timeline is designed to be useful not just as an assignment deliverable but as a reference resource. Someone new to AI/ML can use it to quickly understand the field's trajectory — the false starts, the winters, and what actually changed in 2012. That kind of context matters for making sense of where the field is going.</p>
+      <span class="vp-sub" style="margin-top:12px;">Relevance</span>
+      <p>Leaders and teams working with AI today benefit from understanding why the field developed the way it did. Knowing about the AI Winters helps explain why skepticism around AI can be reasonable, and knowing about AlexNet helps explain why 2012 was such a turning point. That background makes for better strategic decisions.</p>
+    </div>
+
+    <div class="field-label">References</div>
+    <ul>
+      <li>Putchuon. (2024, May 30). <em>The entire history of artificial intelligence (Last 100 years)</em> [Video]. YouTube.</li>
+      <li>IEEE Computer Society. (n.d.). <em>The evolution of AI: From foundations to future prospects.</em></li>
+      <li>Bender, E., &amp; Our World in Data. (n.d.). <em>A brief history of artificial intelligence.</em> Our World in Data.</li>
+    </ul>
+  </section>
+</div></body></html>
